@@ -50,7 +50,7 @@ const Footer = () => {
       <h2 className="head-text">Take a coffee & chat with me</h2>
       {profiles.map((profile, index) => (
 
-        <div className="app__footer-cards" key={index}>
+       <div className="app__footer-cards" key={index}>
         <div className="app__footer-card ">
           <img src={images.gmail} alt="email" />
           <a href={`mailto:${profile.email}`} className="p-text">{profile.email}</a>
@@ -58,11 +58,12 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href={`tel:${profile.number}`} className="p-text">{profile.number}</a>
-        </div>
-        <div className="app__footer-card">
+          <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href={`https://wa.me/${profile.number}?text=Hello`} className="p-text">{profile.number}</a>
+          </div>
         </div>
+        
       </div>
       ))}
       {!isFormSubmitted ? (
