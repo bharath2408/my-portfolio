@@ -60,7 +60,7 @@ const Footer = () => {
           <a href={`tel:${profile.number}`} className="p-text">{profile.number}</a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
+          <img src={images.wa} alt="whatsapp" />
           <a href={`https://wa.me/${profile.number}?text=Hello`} className="p-text">{profile.number}</a>
         </div>
       </div>
