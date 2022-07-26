@@ -58,12 +58,11 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href={`tel:${profile.number}`} className="p-text">{profile.number}</a>
-          <div className="app__footer-card">
+        </div>
+        <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href={`https://wa.me/${profile.number}?text=Hello`} className="p-text">{profile.number}</a>
-          </div>
         </div>
-        
       </div>
       ))}
       {!isFormSubmitted ? (
