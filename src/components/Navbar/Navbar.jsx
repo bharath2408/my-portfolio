@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import './Navbar.scss'
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   return (
       <nav className="app__navbar">
